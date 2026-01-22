@@ -67,9 +67,9 @@ namespace PetStore
         }
         static void AddDog()
         {
-            string name = GetString("name");
-            int age = GetInt("age");
-            string breed = GetString("breed");
+            string name = GetString("Enter the name: ");
+            int age = GetInt("Enter the age: ");
+            string breed = GetString("Enter the breed: ");
 
             Dog dog = new Dog(name, age, breed);
             Console.WriteLine($"Added {dog}");
@@ -77,9 +77,9 @@ namespace PetStore
         }
         static void AddCat()
         {
-            string name = GetString("name");
-            int age = GetInt("age");
-            string breed = GetString("breed");
+            string name = GetString("Enter the name: ");
+            int age = GetInt("Enter the age: ");
+            string breed = GetString("Enter the breed: ");
 
             Cat cat = new Cat(name, age, breed);
             Console.WriteLine($"Added {cat}");
@@ -87,32 +87,32 @@ namespace PetStore
         }
         static void AddBird()
         {
-            string name = GetString("name");
-            int age = GetInt("age");
-            string breed = GetString("species");
+            string name = GetString("Enter the name: ");
+            int age = GetInt("Enter the age: ");
+            string breed = GetString("Enter the species: ");
 
             Bird bird = new Bird(name, age, breed);
             Console.WriteLine($"Added {bird}");
             bird.MakeNoise();
         }
 
-        static string GetString(string optionToGet)
+        static string GetString(string prompt)
         {
-            Console.Write($"Enter the {optionToGet}: ");
+            Console.Write(prompt);
             return Console.ReadLine();
         }
 
-        static int GetInt(string optionToGet) 
+        static int GetInt(string prompt) 
         {
             bool success = false;
             int age = 0;
 
             do
             {
-                Console.Write($"Enter the {optionToGet}: ");
+                Console.Write(prompt);
                 success = int.TryParse(Console.ReadLine(), out age);
                 if (!success)
-                    Console.WriteLine($"Invalid {optionToGet}.");
+                    Console.WriteLine("Invalid input.");
 
             } while (!success);
             return age;
