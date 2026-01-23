@@ -8,28 +8,6 @@ Refactor your `Book` class so that:
 - The properties should not be changeable from outside the class (use read-only properties)
 - `PrintSummary()` still prints a one-line summary
 
-### Starter shape (recommended)
-```csharp
-public class Book
-{
-    public string Title { get; }
-    public string Author { get; }
-    public int Pages { get; }
-
-    public Book(string title, string author, int pages)
-    {
-        Title = title;
-        Author = author;
-        Pages = pages;
-    }
-
-    public void PrintSummary()
-    {
-        Console.WriteLine($"{Title} by {Author}, {Pages} pages");
-    }
-}
-````
-
 In `Main`:
 
 * Create two books like:
