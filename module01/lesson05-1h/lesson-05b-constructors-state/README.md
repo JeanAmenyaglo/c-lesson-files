@@ -39,6 +39,6 @@ currentStudent.PrintInfo();
 
 ## What to do next
 
-Open `PRACTICE.md` and refactor `Book` to use a constructor.
-If you get stuck, open the code in `examples/`.
+Open [PRACTICE.md](./PRACTICE.md) and refactor `Book` to use a constructor.
+If you get stuck, open the code in [examples](./examples/).
 

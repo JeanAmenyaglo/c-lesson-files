@@ -38,6 +38,6 @@ currentStudent.PrintInfo();
 
 ## What to do next
 
-Open `PRACTICE.md` and complete the Book activity.
-If you get stuck, open the code in `examples/`.
+Open [PRACTICE.md](./PRACTICE.md) and complete the Book activity.
+If you get stuck, open the code in [examples](./examples/).
 
