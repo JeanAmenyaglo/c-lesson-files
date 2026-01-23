@@ -6,10 +6,10 @@ Good naming makes your code easier to read, debug, and mark.
 - Use **descriptive variable names**:
   - ✅ `currentStudent`, `firstBook`, `selectedBook`, `accountBalance`
   - ❌ `s`, `b1`, `x`, `temp` (unless the meaning is obvious)
-- Use **PascalCase** for class names:
-  - `Student`, `Book`, `BankAccount`
-- Use **camelCase** for local variables and method names:
-  - `currentStudent`, `printSummary()`
+- Use **PascalCase** for class names and method names:
+  - `Student`, `Book`, `BankAccount`,`PrintSummary()`
+- Use **camelCase** for local variables :
+  - `currentStudent`
 - Use **_camelCase** for private fields (backing fields):
   - `_age`, `_pages`, `_balance`
 
